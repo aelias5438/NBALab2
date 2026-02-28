@@ -52,7 +52,7 @@ cluster_labels = kmeans.labels_
 
 #%%
 
-# %%
+# %% EDA to see how our clusters stack up with our data
 sns.relplot(x=cluster_cols['PTS Per Minute'], y=cluster_cols['TRB'], hue=cluster_labels, palette='Set1')
 # %%
 sns.relplot(x=cluster_cols['PTS Per Minute'], y=cluster_cols['AST'], hue=cluster_labels, palette='Set1')
@@ -111,8 +111,7 @@ cluster_labels = kmeans.fit_predict(X_scaled)
 # %%
 cluster_labels = kmeans.labels_
 
-# %%
-sns.relplot(x=cluster_cols['PTS Per Minute'], y=cluster_cols['TRB'], hue=cluster_labels, palette='Set1')
+# %% EDA to see how our clusters stack up with our datasns.relplot(x=cluster_cols['PTS Per Minute'], y=cluster_cols['TRB'], hue=cluster_labels, palette='Set1')
 # %%
 sns.relplot(x=cluster_cols['PTS Per Minute'], y=cluster_cols['AST'], hue=cluster_labels, palette='Set1')
 # %%
